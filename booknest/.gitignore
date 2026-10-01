@@ -1,0 +1,12 @@
+# Build output: Maven recreates it
+target/
+
+# Files the program writes while running
+data/*.log
+data/*.db
+data/orders.csv
+data/rush-hour-orders.csv
+
+# IDE settings
+.idea/
+*.iml

@@ -1,0 +1,15 @@
+<configuration>
+
+  <!-- Log messages go to a file; the console belongs to customers -->
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>data/booknest.log</file>
+    <encoder>
+      <pattern>%d %-5level [%thread] %logger{20} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- INFO and above: INFO, WARN, and ERROR -->
+  <root level="INFO">
+    <appender-ref ref="FILE"/>
+  </root>
+</configuration>
